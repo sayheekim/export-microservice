@@ -32,7 +32,7 @@ You can recreate the environment that was used to develop this microservice
 5.  Now you can run the program via the command:
     python3 export-service.py.
 
-    You should see a message confirming the service is running in your terminal/commad prompt
+    You should see a message confirming the service is running in your terminal/commad prompt, like so:
 
     -   Serving Flask app 'export-service'
     -   ...
