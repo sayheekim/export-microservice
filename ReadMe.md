@@ -54,3 +54,7 @@ You can recreate the environment that was used to develop this microservice
 # Additional Notes
 
 -   Once you have your own MongoDB database set up, replace the values of MONGO_URI, DB_NAME, and COLLECTION_NAME variables in export-service.py to retrieve data from your database. (Currently it is retrieving data from my personal database.)
+
+# UML Diagram showing how to request and receive data:
+
+![UML diagram](./UML.png)
