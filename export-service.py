@@ -15,6 +15,25 @@ COLLECTION_NAME = "users"
 
 app = Flask(__name__)
 
+# bson => json 
+def parse_json(data):
+    return json.loads(json_util.dumps(data))
+
+
+# @app.route('/getData', methods=['GET'])
+# def get_data():
+#     # return "Hello world!!!!"
+#     # Connect to MongoDB Atlas
+#     client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
+#     db = client[DB_NAME]
+#     collection = db[COLLECTION_NAME]
+   
+#     # Retrieve data from MongoDB
+#     cursor = collection.find()
+#     data = list(parse_json(cursor))
+#     return data
+
+
 # export to csv format
 @app.route('/csv')
 def export_csv():
