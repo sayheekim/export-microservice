@@ -47,7 +47,7 @@ You can recreate the environment that was used to develop this microservice
 
 # How to Receive Data
 
--   Once the service is triggered at an endpoint, it will automatically send the export file back to the client.
+-   Once the service is triggered at an endpoint, it will automatically send the export file back.
 -   You should automatically be prompted to save the export, which will be in .csv or .json file, depending on which endpoint was requested.
 -   You can also customize the names the files will be downloaded as, by changing the "download_name" parameter in the send\_\_file() methods inside export-service.py.
 
@@ -55,6 +55,6 @@ You can recreate the environment that was used to develop this microservice
 
 -   Once you have your own MongoDB database set up, replace the values of MONGO_URI, DB_NAME, and COLLECTION_NAME variables in export-service.py to retrieve data from your database. (Currently it is retrieving data from my personal database.)
 
-# UML Diagram showing how to request and receive data:
+# UML Diagram:
 
 ![UML diagram](./UML.png)
