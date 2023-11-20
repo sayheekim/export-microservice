@@ -49,3 +49,4 @@ You can recreate the environment that was used to develop this microservice
 
 -   Once the service is triggered at an endpoint, it will automatically send the export file back to the client.
 -   You will be prompted to save the export, which will be in .csv or .json file, depending on which endpoint was requested.
+-   Once you have your own MongoDB database set up, you must replace the values of MONGO_URI, DB_NAME, and COLLECTION_NAME variables in export-service.py to retrieve data from your database. Currently it is retrieving data from my personal database.
