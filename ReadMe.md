@@ -42,12 +42,12 @@ You can recreate the environment that was used to develop this microservice
 
 -   The Flask server is running on the URL provided in Step 5 above. (http://127.0.0.1:8000), and has two endpoints (/'/csv' and '/json').
 -   While the service is running, you can trigger the "csv export" service with a HTTP GET request to the '/csv' path.
-    (You can simply visit "http://127.0.0.1:8000/csv" in your browser, or send a GET request from your own program)
--   While the service is running, you can trigger the "json export" service with a HTTP GET request to the '/json' path. (Visit "http://127.0.0.1:8000/json" in your browser, or send a GET request from your own program)
+    (For example, you can simply visit "http://127.0.0.1:8000/csv" in your browser, or send a GET request from your own program. You can also use Postman or a similar service to test.)
+-   While the service is running, you can trigger the "json export" service with a HTTP GET request to the '/json' path. (For example, you can simply visit "http://127.0.0.1:8000/json" in your browser, or send a GET request from your own program. You can also use Postman or a similar service to test.)
 
 # How to Receive Data
 
--   Once the service is triggered at an endpoint, it will automatically send the export file back.
+-   Once the service is triggered at an endpoint, it will automatically prepare the file sin the requested format and send the export file back. No additional action is needed.
 -   You should automatically be prompted to save the export, which will be in .csv or .json file, depending on which endpoint was requested.
 -   You can also customize the names the files will be downloaded as, by changing the "download_name" parameter in the send\_\_file() methods inside export-service.py.
 
